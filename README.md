@@ -5,6 +5,9 @@ AI engineer shipping production multi-agent systems across many models (Anthropi
 
 #### Building
 <!-- BUILDING:START -->
+- **[ATFG AI Platform](https://hunter.cv)** - Multi-model AI platform I built solo that ~100 paying financial producers run their business on: outreach, client management, and a custom ATS. Private.
+- **[AIOS + Hermes](https://hunter.cv/business-os)** - 24/7 multi-channel agent operation: a 17-role agent org chart, approval-gated human-in-the-loop, and LiteLLM model routing across providers. Private.
+- **[VBrain](https://hunter.cv/pseo)** - Persistent graph-memory system with typed entity edges and zero-LLM extraction, so agents never lose context across sessions. Private.
 - **[hunter.cv](https://hunter.cv)** - Interactive AI CV: agentic RAG, an eval harness that grades it on 38 questions, and 6-layer security, all on free tiers under $5/mo.
 - **[vibebloat](https://github.com/veltri-23/vibebloat)** - Reads your agent history and compiles every mistake so the same one is never made twice. Zero token cost.
 <!-- BUILDING:END -->
