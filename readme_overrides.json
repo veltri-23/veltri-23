@@ -1,10 +1,10 @@
 {
   "building_exclude": ["veltri-23", "printing-press-library"],
   "building_extra": [
-    { "name": "ATFG AI Platform", "url": "https://hunter.cv", "blurb": "Multi-model AI platform I built solo that ~100 paying financial producers run their business on: outreach, client management, and a custom ATS. Private." },
-    { "name": "AIOS + Hermes", "url": "https://hunter.cv/business-os", "blurb": "24/7 multi-channel agent operation: a 17-role agent org chart, approval-gated human-in-the-loop, and LiteLLM model routing across providers. Private." },
-    { "name": "VBrain", "url": "https://hunter.cv/pseo", "blurb": "Persistent graph-memory system with typed entity edges and zero-LLM extraction, so agents never lose context across sessions. Private." },
-    { "name": "hunter.cv", "url": "https://hunter.cv", "blurb": "Interactive AI CV: agentic RAG, an eval harness that grades it on 38 questions, and 6-layer security, all on free tiers under $5/mo." }
+    { "name": "ATFG AI Platform", "url": "https://hunter-cv.vercel.app/#build", "blurb": "Multi-model AI platform I built solo that ~100 paying financial producers run their business on: outreach, client management, and a custom ATS. Private." },
+    { "name": "AIOS + Hermes", "url": "https://hunter-cv.vercel.app/#projects", "blurb": "24/7 multi-channel agent operation: a 17-role agent org chart, approval-gated human-in-the-loop, and LiteLLM model routing across providers. Private." },
+    { "name": "VBrain", "url": "https://hunter-cv.vercel.app/#projects", "blurb": "Persistent graph-memory system with typed entity edges and zero-LLM extraction, so agents never lose context across sessions. Private." },
+    { "name": "hunter-cv.vercel.app", "url": "https://hunter-cv.vercel.app", "blurb": "Interactive AI CV: agentic RAG, an eval harness that grades it on 38 questions, and 6-layer security, all on free tiers under $5/mo." }
   ],
   "building_blurbs": {
     "vibebloat": "Reads your agent history and compiles every mistake so the same one is never made twice. Zero token cost."
