@@ -1,11 +1,10 @@
 {
   "building_exclude": ["veltri-23", "printing-press-library", "vibebloat"],
   "building_extra": [
+    { "name": "Overview of Hunter's Portfolio", "url": "https://hunter-cv.vercel.app", "blurb": "Interactive AI CV: agentic RAG, an eval harness that grades it on 38 questions, and 6-layer security, all on free tiers under $5/mo." },
+    { "name": "VibeBloat", "url": "https://github.com/veltri-23/vibebloat", "blurb": "Reads your agent history and compiles every mistake so the same one is never made twice. Zero token cost." },
     { "name": "ATFG AI Platform", "url": "https://hunter-cv.vercel.app/#build", "blurb": "Multi-model AI platform I built solo that ~100 paying financial producers run their business on: outreach, client management, and a custom ATS. Private." },
-    { "name": "AIOS", "url": "https://hunter-cv.vercel.app/#projects", "blurb": "24/7 multi-channel agent operation: a 17-role agent org chart, approval-gated human-in-the-loop, and LiteLLM model routing across providers. Private." },
-    { "name": "VBrain", "url": "https://hunter-cv.vercel.app/#projects", "blurb": "A heavily modified fork of GBrain: a persistent graph-memory system with typed entity edges and zero-LLM extraction, so agents never lose context across sessions. Private." },
-    { "name": "hunter-cv.vercel.app", "url": "https://hunter-cv.vercel.app", "blurb": "Interactive AI CV: agentic RAG, an eval harness that grades it on 38 questions, and 6-layer security, all on free tiers under $5/mo." },
-    { "name": "VibeBloat", "url": "https://github.com/veltri-23/vibebloat", "blurb": "Reads your agent history and compiles every mistake so the same one is never made twice. Zero token cost." }
+    { "name": "VBrain", "url": "https://hunter-cv.vercel.app/#projects", "blurb": "A heavily modified fork of GBrain: a persistent graph-memory system with typed entity edges and zero-LLM extraction, so agents never lose context across sessions. Private." }
   ],
   "building_blurbs": {},
   "contributing_exclude": ["mvanhorn/printing-press-library"],

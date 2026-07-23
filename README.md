@@ -5,11 +5,10 @@ AI engineer shipping production multi-agent systems across many models (Anthropi
 
 #### Building
 <!-- BUILDING:START -->
-- **[ATFG AI Platform](https://hunter-cv.vercel.app/#build)** - Multi-model AI platform I built solo that ~100 paying financial producers run their business on: outreach, client management, and a custom ATS. Private.
-- **[AIOS](https://hunter-cv.vercel.app/#projects)** - 24/7 multi-channel agent operation: a 17-role agent org chart, approval-gated human-in-the-loop, and LiteLLM model routing across providers. Private.
-- **[VBrain](https://hunter-cv.vercel.app/#projects)** - A heavily modified fork of GBrain: a persistent graph-memory system with typed entity edges and zero-LLM extraction, so agents never lose context across sessions. Private.
-- **[hunter-cv.vercel.app](https://hunter-cv.vercel.app)** - Interactive AI CV: agentic RAG, an eval harness that grades it on 38 questions, and 6-layer security, all on free tiers under $5/mo.
+- **[Overview of Hunter's Portfolio](https://hunter-cv.vercel.app)** - Interactive AI CV: agentic RAG, an eval harness that grades it on 38 questions, and 6-layer security, all on free tiers under $5/mo.
 - **[VibeBloat](https://github.com/veltri-23/vibebloat)** - Reads your agent history and compiles every mistake so the same one is never made twice. Zero token cost.
+- **[ATFG AI Platform](https://hunter-cv.vercel.app/#build)** - Multi-model AI platform I built solo that ~100 paying financial producers run their business on: outreach, client management, and a custom ATS. Private.
+- **[VBrain](https://hunter-cv.vercel.app/#projects)** - A heavily modified fork of GBrain: a persistent graph-memory system with typed entity edges and zero-LLM extraction, so agents never lose context across sessions. Private.
 <!-- BUILDING:END -->
 
 #### Contributing to
