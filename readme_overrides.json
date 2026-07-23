@@ -1,0 +1,13 @@
+{
+  "building_exclude": ["veltri-23", "printing-press-library"],
+  "building_extra": [
+    { "name": "hunter.cv", "url": "https://hunter.cv", "blurb": "Interactive AI CV: agentic RAG, an eval harness that grades it on 38 questions, and 6-layer security, all on free tiers under $5/mo." }
+  ],
+  "building_blurbs": {
+    "vibebloat": "Reads your agent history and compiles every mistake so the same one is never made twice. Zero token cost."
+  },
+  "contributing_exclude": ["mvanhorn/printing-press-library"],
+  "contributing_extra": [
+    { "name": "Printing Press Library", "url": "https://github.com/mvanhorn/printing-press-library", "blurb": "Authored the Paperclip CLI documentation published in the library: install and auth across Node.js, Hermes, OpenClaw, and Claude Desktop, 40+ command groups, and agent-native usage. Credited on the page as Created by @veltri-23." }
+  ]
+}
