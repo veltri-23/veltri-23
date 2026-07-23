@@ -1,3 +1,0 @@
-{"ts":"2026-07-23T20:12:46.261Z","cmd":"goto","args":"https://hunter-cv.vercel.app","origin":"https://hunter-cv.vercel.app/","durationMs":573,"status":"ok","hasCookies":false,"mode":"launched"}
-{"ts":"2026-07-23T20:12:48.373Z","cmd":"js","args":"fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({access_key:'8dea78b4-905e-405e-8984-f5bac503e7b8',n…","origin":"https://hunter-cv.vercel.app/","durationMs":657,"status":"ok","hasCookies":false,"mode":"launched"}
-{"ts":"2026-07-23T20:12:55.016Z","cmd":"js","args":"document.title","origin":"https://hunter-cv.vercel.app/","durationMs":61,"status":"ok","hasCookies":false,"mode":"launched"}
