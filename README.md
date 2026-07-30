@@ -1,13 +1,13 @@
 ### Hey, I'm Hunter Veltri
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Hunter%20Veltri-0A66C2?style=flat&logo=linkedin)](https://linkedin.com/in/hunter-veltri-0b6926370) [![Website](https://img.shields.io/badge/Website-hunter--cv.vercel.app-000?style=flat&logo=vercel)](https://hunter-cv.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Hunter%20Veltri-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/hveltri) [![Website](https://img.shields.io/badge/Website-hunter--cv.vercel.app-000?style=flat&logo=vercel)](https://hunter-cv.vercel.app)
 
-AI engineer shipping production multi-agent systems across many models (Anthropic, OpenAI, xAI, MiniMax, local) with routing, retrieval, and evals I wrote myself. Built and run the ATFG AI Platform solo to ~100 paying financial producers at 92% month-over-month retention.
+AI engineer shipping production multi-agent systems across Anthropic, OpenAI, xAI, MiniMax, and local models, with routing, retrieval, evaluations, and automation built end to end. Built and operate the ATFG AI Platform across outreach, client management, recruiting, and operational workflows, with 92% month-over-month retention.
 
 #### Building
 <!-- BUILDING:START -->
 - **[Overview of Hunter's Portfolio](https://hunter-cv.vercel.app)** - Interactive AI CV: agentic RAG, an eval harness that grades it on 38 questions, and 6-layer security, all on free tiers under $5/mo.
 - **[VibeBloat](https://github.com/veltri-23/vibebloat)** [![GitHub stars](https://img.shields.io/github/stars/veltri-23/vibebloat?style=flat&color=gold)](https://github.com/veltri-23/vibebloat) - Reads your agent history and compiles every mistake so the same one is never made twice. Zero token cost.
-- **[ATFG AI Platform](https://hunter-cv.vercel.app/#build)** - Multi-model AI platform I built solo that ~100 paying financial producers run their business on: outreach, client management, and a custom ATS. Private.
+- **[ATFG AI Platform](https://hunter-cv.vercel.app/#build)** - Multi-model AI platform I built end to end for outreach, client management, recruiting, and operational automation, with 92% month-over-month retention. Private.
 - **[VBrain](https://hunter-cv.vercel.app/#projects)** - A heavily modified fork of GBrain: a persistent graph-memory system with typed entity edges and zero-LLM extraction, so agents never lose context across sessions. Private.
 <!-- BUILDING:END -->
 
