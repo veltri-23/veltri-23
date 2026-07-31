@@ -17,6 +17,6 @@ AI engineer shipping production multi-agent systems across Anthropic, OpenAI, xA
 <!-- CONTRIB:END -->
 
 <!-- PENDING:START -->
-#### Open pull requests
-- **[mvanhorn/printing-press-library#1627](https://github.com/mvanhorn/printing-press-library/pull/1627)** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/printing-press-library?style=flat&color=gold)](https://github.com/mvanhorn/printing-press-library) - feat(zillow): add zillow
+#### Open pull request contributions
+- **[Zillow CLI - Printing Press library](https://github.com/mvanhorn/printing-press-library/pull/1627)** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/printing-press-library?style=flat&color=gold)](https://github.com/mvanhorn/printing-press-library) - Housing-market CLI and MCP server built on official Zillow Research datasets, no scraping: 17 normalized regional time series, local SQLite sync with read-only SQL and data-quality auditing, and 14 explainable analysis commands (affordability gap, rent-to-value yield proxy, months of inventory, turning points, buy-vs-rent) that show their formulas instead of a black-box score. 57k lines across 173 files. Awaiting upstream review.
 <!-- PENDING:END -->

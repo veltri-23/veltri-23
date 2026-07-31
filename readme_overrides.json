@@ -10,5 +10,11 @@
   "contributing_exclude": ["mvanhorn/printing-press-library"],
   "contributing_extra": [
     { "name": "Printing Press", "url": "https://github.com/mvanhorn/cli-printing-press", "stars": "mvanhorn/cli-printing-press", "blurb": "Authored the Paperclip CLI documentation in the Printing Press library: install and auth across Node.js, Hermes, OpenClaw, and Claude Desktop, 40+ command groups, and agent-native usage. Credited as Created by @veltri-23." }
-  ]
+  ],
+  "pending_overrides": {
+    "mvanhorn/printing-press-library#1627": {
+      "name": "Zillow CLI - Printing Press library",
+      "blurb": "Housing-market CLI and MCP server built on official Zillow Research datasets, no scraping: 17 normalized regional time series, local SQLite sync with read-only SQL and data-quality auditing, and 14 explainable analysis commands (affordability gap, rent-to-value yield proxy, months of inventory, turning points, buy-vs-rent) that show their formulas instead of a black-box score. 57k lines across 173 files. Awaiting upstream review."
+    }
+  }
 }

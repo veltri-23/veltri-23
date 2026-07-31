@@ -69,10 +69,12 @@ def pending_block():
     prs = sorted(open_prs(), key=lambda p: (p["repository"]["nameWithOwner"], p["number"]))
     if not prs:
         return ""   # whole section (heading included) disappears
-    lines = ["#### Open pull requests"]
+    lines = ["#### Open pull request contributions"]
     for p in prs:
         full = p["repository"]["nameWithOwner"]
-        lines.append(f'- **[{full}#{p["number"]}]({p["url"]})** {badge(full)} - {p["title"]}')
+        o = OVR.get("pending_overrides", {}).get(f'{full}#{p["number"]}', {})
+        lines.append(line(o.get("name", f'{full}#{p["number"]}'), p["url"],
+                          o.get("blurb", p["title"]), full))
     return "\n".join(lines)
 
 def replace(md, key, body):
