@@ -56,11 +56,32 @@ def contributing_block():
                           f'{n} merged PR{"s" if n>1 else ""}', full))
     return "\n".join(lines) if lines else "_(nothing yet)_"
 
+def open_prs():
+    """Non-draft PRs still awaiting review on repos I don't own."""
+    data = json.loads(gh("search", "prs", "--author", USER, "--state", "open",
+                         "--limit", "100", "--json", "repository,url,title,number,isDraft"))
+    return [p for p in data
+            if not p["isDraft"]
+            and p["repository"]["nameWithOwner"].split("/")[0] != USER
+            and p["repository"]["nameWithOwner"] not in OVR.get("pending_exclude", [])]
+
+def pending_block():
+    prs = sorted(open_prs(), key=lambda p: (p["repository"]["nameWithOwner"], p["number"]))
+    if not prs:
+        return ""   # whole section (heading included) disappears
+    lines = ["#### Open pull requests"]
+    for p in prs:
+        full = p["repository"]["nameWithOwner"]
+        lines.append(f'- **[{full}#{p["number"]}]({p["url"]})** {badge(full)} - {p["title"]}')
+    return "\n".join(lines)
+
 def replace(md, key, body):
     s, e = f"<!-- {key}:START -->", f"<!-- {key}:END -->"
-    return re.sub(re.escape(s)+r".*?"+re.escape(e), f"{s}\n{body}\n{e}", md, flags=re.S)
+    new = f"{s}\n{body}\n{e}" if body else f"{s}\n{e}"
+    return re.sub(re.escape(s)+r".*?"+re.escape(e), new, md, flags=re.S)
 
 md = README.read_text(encoding="utf-8")
 md = replace(md, "BUILDING", building_block())
 md = replace(md, "CONTRIB", contributing_block())
+md = replace(md, "PENDING", pending_block())
 README.write_text(md, encoding="utf-8")
