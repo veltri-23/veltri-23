@@ -13,7 +13,7 @@ AI engineer shipping production multi-agent systems across Anthropic, OpenAI, xA
 
 #### Contributing to
 <!-- CONTRIB:START -->
-- **[Printing Press](https://github.com/mvanhorn/cli-printing-press)** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/cli-printing-press?style=flat&color=gold)](https://github.com/mvanhorn/cli-printing-press) - Created and contributed **[Paperclip CLI](https://github.com/mvanhorn/printing-press-library/tree/main/library/project-management/paperclip-self-hosted)**, an agent-native CLI, skill, and MCP server for self-hosted Paperclip, plus **[Zillow CLI](https://github.com/mvanhorn/printing-press-library/tree/main/library/other/zillow)**, a housing-market CLI and MCP server using Zillow Research datasets, local SQLite sync, data-quality checks, and explainable market analysis.
+- **[Printing Press](https://github.com/mvanhorn/cli-printing-press)** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/cli-printing-press?style=flat&color=gold)](https://github.com/mvanhorn/cli-printing-press) - Created and contributed **[Paperclip CLI](https://printingpress.dev/library/project-management/paperclip-self-hosted)**, an agent-native CLI, skill, and MCP server for self-hosted Paperclip, plus **[Zillow CLI](https://printingpress.dev/library/other/zillow)**, a housing-market CLI and MCP server using Zillow Research datasets, local SQLite sync, data-quality checks, and explainable market analysis.
 <!-- CONTRIB:END -->
 
 <!-- PENDING:START -->
