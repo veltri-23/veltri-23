@@ -14,6 +14,7 @@ AI engineer shipping production multi-agent systems across Anthropic, OpenAI, xA
 #### Contributing to
 <!-- CONTRIB:START -->
 - **[Printing Press](https://github.com/mvanhorn/cli-printing-press)** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/cli-printing-press?style=flat&color=gold)](https://github.com/mvanhorn/cli-printing-press) - Authored the Paperclip CLI documentation in the Printing Press library: install and auth across Node.js, Hermes, OpenClaw, and Claude Desktop, 40+ command groups, and agent-native usage. Credited as Created by @veltri-23.
+- **[Zillow CLI](https://printingpress.dev/library/other/zillow)** - Built and merged a housing-market CLI and MCP server using Zillow Research datasets, with local SQLite sync, data-quality checks, and explainable market analysis.
 <!-- CONTRIB:END -->
 
 <!-- PENDING:START -->
