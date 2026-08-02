@@ -17,4 +17,6 @@ AI engineer shipping production multi-agent systems across Anthropic, OpenAI, xA
 <!-- CONTRIB:END -->
 
 <!-- PENDING:START -->
+#### Open pull request contributions
+- **[NousResearch/hermes-agent#76616](https://github.com/NousResearch/hermes-agent/pull/76616)** [![GitHub stars](https://img.shields.io/github/stars/NousResearch/hermes-agent?style=flat&color=gold)](https://github.com/NousResearch/hermes-agent) - feat(desktop): add safe current backend restart
 <!-- PENDING:END -->
