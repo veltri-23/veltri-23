@@ -19,4 +19,5 @@ AI engineer shipping production multi-agent systems across Anthropic, OpenAI, xA
 <!-- PENDING:START -->
 #### Open pull request contributions
 - **[NousResearch/hermes-agent#76616](https://github.com/NousResearch/hermes-agent/pull/76616)** [![GitHub stars](https://img.shields.io/github/stars/NousResearch/hermes-agent?style=flat&color=gold)](https://github.com/NousResearch/hermes-agent) - Adds safe current-backend restart for Hermes Desktop across local and SSH backends, with active-turn confirmation, bounded teardown, ownership-verified process handling, fresh spawn identity, and reconnect; remote/cloud backends remain reconnect-only.
+- **[stablyai/orca#12139](https://github.com/stablyai/orca/pull/12139)** [![GitHub stars](https://img.shields.io/github/stars/stablyai/orca?style=flat&color=gold)](https://github.com/stablyai/orca) - Fixes cross-repository GitHub work-item pagination in Orca's Tasks view: compatible repository selections now use one Search API plan, merge results by creation time, preserve globally ordered pagination, and keep exact counts while retaining safe fallbacks.
 <!-- PENDING:END -->
