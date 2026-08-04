@@ -12,6 +12,12 @@
     { "name": "Printing Press", "url": "https://github.com/mvanhorn/cli-printing-press", "stars": "mvanhorn/cli-printing-press", "blurb": "Created and contributed **[Paperclip CLI](https://printingpress.dev/library/project-management/paperclip-self-hosted)**, an agent-native CLI, skill, and MCP server for self-hosted Paperclip, plus **[Zillow CLI](https://printingpress.dev/library/other/zillow)**, a housing-market CLI and MCP server using Zillow Research datasets, local SQLite sync, data-quality checks, and explainable market analysis." }
   ],
   "pending_overrides": {
+    "DietrichGebert/ponytail#686": {
+      "blurb": "Stops a misconfigured regex from crashing or freezing Ponytail's subagent hook; invalid patterns are safely ignored and the ruleset is still injected everywhere."
+    },
+    "block/buzz#4742": {
+      "blurb": "Makes the 'enabled: false' flag in workflow definitions truly stop execution across every trigger path, and persists it to the database so disabled workflows stay disabled."
+    },
     "NousResearch/hermes-agent#76616": {
       "blurb": "Adds safe current-backend restart for Hermes Desktop across local and SSH backends, with active-turn confirmation, bounded teardown, ownership-verified process handling, fresh spawn identity, and reconnect; remote/cloud backends remain reconnect-only."
     },
