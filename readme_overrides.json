@@ -57,6 +57,9 @@
     },
     "garrytan/gbrain#3832": {
       "blurb": "Fixes gbrain autopilot on Windows: resolves the CLI shim by walking PATH directly instead of the which command, with guards against cwd hijack, non-spawnable PATHEXT types, and directory shadowing."
+    },
+    "mvanhorn/last30days-skill#948": {
+      "blurb": "Aligns the Python env parser with the bash one: inline # comments now strip exactly as check-config.sh does, with quotes and escaped quotes handled, so documented .env examples parse correctly."
     }
   }
 }
