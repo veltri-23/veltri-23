@@ -66,15 +66,25 @@ def open_prs():
             and p["repository"]["nameWithOwner"] not in OVR.get("pending_exclude", [])]
 
 def pending_block():
+    """Open PRs grouped by repo: one line per repo, each PR its own link."""
     prs = sorted(open_prs(), key=lambda p: (p["repository"]["nameWithOwner"], p["number"]))
     if not prs:
         return ""   # whole section (heading included) disappears
     lines = ["#### Open pull request contributions"]
+    # group by repo, preserving sorted order (repo, then PR number)
+    by_repo = {}
     for p in prs:
-        full = p["repository"]["nameWithOwner"]
-        o = OVR.get("pending_overrides", {}).get(f'{full}#{p["number"]}', {})
-        lines.append(line(o.get("name", f'{full}#{p["number"]}'), p["url"],
-                          o.get("blurb", p["title"]), full))
+        by_repo.setdefault(p["repository"]["nameWithOwner"], []).append(p)
+    for full, repo_prs in by_repo.items():
+        # one badge per repo; each PR is its own bracketed link
+        b = f' {badge(full)}' if full else ''
+        pr_links = []
+        for p in repo_prs:
+            o = OVR.get("pending_overrides", {}).get(f'{full}#{p["number"]}', {})
+            blurb = o.get("blurb", p["title"])
+            link = f'[#{p["number"]}]({p["url"]})'
+            pr_links.append(f'{link} - {blurb}' if blurb else link)
+        lines.append(f'- **{full}**{b} - ' + ' | '.join(pr_links))
     return "\n".join(lines)
 
 def replace(md, key, body):
