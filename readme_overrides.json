@@ -1,15 +1,43 @@
 {
-  "building_exclude": ["veltri-23", "printing-press-library", "vibebloat"],
+  "building_exclude": [
+    "veltri-23",
+    "printing-press-library",
+    "vibebloat"
+  ],
   "building_extra": [
-    { "name": "Overview of Hunter's Portfolio", "url": "https://hunter-cv.vercel.app", "blurb": "Interactive AI CV: agentic RAG, an eval harness that grades it on 38 questions, and 6-layer security, all on free tiers under $5/mo." },
-    { "name": "VibeBloat", "url": "https://github.com/veltri-23/vibebloat", "stars": "veltri-23/vibebloat", "blurb": "Reads your agent history and compiles every mistake so the same one is never made twice. Zero token cost." },
-    { "name": "ATFG AI Platform", "url": "https://hunter-cv.vercel.app/#build", "blurb": "Multi-model AI platform I built end to end for outreach, client management, recruiting, and operational automation, with 92% month-over-month retention. Private." },
-    { "name": "VBrain", "url": "https://hunter-cv.vercel.app/#projects", "blurb": "A heavily modified fork of GBrain: a persistent graph-memory system with typed entity edges and zero-LLM extraction, so agents never lose context across sessions. Private." }
+    {
+      "name": "Overview of Hunter's Portfolio",
+      "url": "https://hunter-cv.vercel.app",
+      "blurb": "Interactive AI CV: agentic RAG, an eval harness that grades it on 38 questions, and 6-layer security, all on free tiers under $5/mo."
+    },
+    {
+      "name": "VibeBloat",
+      "url": "https://github.com/veltri-23/vibebloat",
+      "stars": "veltri-23/vibebloat",
+      "blurb": "Reads your agent history and compiles every mistake so the same one is never made twice. Zero token cost."
+    },
+    {
+      "name": "ATFG AI Platform",
+      "url": "https://hunter-cv.vercel.app/#build",
+      "blurb": "Multi-model AI platform I built end to end for outreach, client management, recruiting, and operational automation, with 92% month-over-month retention. Private."
+    },
+    {
+      "name": "VBrain",
+      "url": "https://hunter-cv.vercel.app/#projects",
+      "blurb": "A heavily modified fork of GBrain: a persistent graph-memory system with typed entity edges and zero-LLM extraction, so agents never lose context across sessions. Private."
+    }
   ],
   "building_blurbs": {},
-  "contributing_exclude": ["mvanhorn/printing-press-library"],
+  "contributing_exclude": [
+    "mvanhorn/printing-press-library"
+  ],
   "contributing_extra": [
-    { "name": "Printing Press", "url": "https://github.com/mvanhorn/cli-printing-press", "stars": "mvanhorn/cli-printing-press", "blurb": "Created and contributed **[Paperclip CLI](https://printingpress.dev/library/project-management/paperclip-self-hosted)**, an agent-native CLI, skill, and MCP server for self-hosted Paperclip, plus **[Zillow CLI](https://printingpress.dev/library/other/zillow)**, a housing-market CLI and MCP server using Zillow Research datasets, local SQLite sync, data-quality checks, and explainable market analysis." }
+    {
+      "name": "Printing Press",
+      "url": "https://github.com/mvanhorn/cli-printing-press",
+      "stars": "mvanhorn/cli-printing-press",
+      "blurb": "Created and contributed **[Paperclip CLI](https://printingpress.dev/library/project-management/paperclip-self-hosted)**, an agent-native CLI, skill, and MCP server for self-hosted Paperclip, plus **[Zillow CLI](https://printingpress.dev/library/other/zillow)**, a housing-market CLI and MCP server using Zillow Research datasets, local SQLite sync, data-quality checks, and explainable market analysis."
+    }
   ],
   "pending_overrides": {
     "NousResearch/hermes-agent#76616": {
@@ -20,6 +48,9 @@
     },
     "stablyai/orca#12139": {
       "blurb": "Fixes cross-repository GitHub work-item pagination in Orca's Tasks view: compatible repository selections now use one Search API plan, merge results by creation time, preserve globally ordered pagination, and keep exact counts while retaining safe fallbacks."
+    },
+    "garrytan/gbrain#3832": {
+      "blurb": "Fixes gbrain autopilot on Windows: resolves the CLI shim by walking PATH directly instead of the which command, with guards against cwd hijack, non-spawnable PATHEXT types, and directory shadowing."
     }
   }
 }
