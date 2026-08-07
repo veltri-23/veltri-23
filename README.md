@@ -1,7 +1,7 @@
 ### Hey, I'm Hunter Veltri
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Hunter%20Veltri-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/hveltri) [![Website](https://img.shields.io/badge/Website-hunter--cv.vercel.app-000?style=flat&logo=vercel)](https://hunter-cv.vercel.app)
 
-AI engineer shipping production multi-agent systems across Anthropic, OpenAI, xAI, MiniMax, and local models, with routing, retrieval, evaluations, and automation built end to end. Built and operate the ATFG AI Platform across outreach, client management, recruiting, and operational workflows, with 92% month-over-month retention.
+AI engineer shipping production multi-agent systems across multiple AI models and automation built end to end. Built and operate the ATFG AI Platform across outreach, client management, recruiting, and operational workflows, with 92% month-over-month retention.
 
 #### Building
 <!-- BUILDING:START -->
