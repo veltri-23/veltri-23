@@ -63,6 +63,12 @@
     },
     "mvanhorn/printing-press-library#1669": {
       "blurb": "Adds greenhouse-pp-cli: a generic, no-auth CLI for any company's public Greenhouse job board, plus a proposal for a new job-boards category in the printing-press library."
+    },
+    "mvanhorn/printing-press-library#1670": {
+      "blurb": "Adds lever-pp-cli: a generic, no-auth CLI for any company's public Lever job board, with live postings, company-scoped sync, and the same job-boards category pattern as the greenhouse entry."
+    },
+    "mvanhorn/printing-press-library#1672": {
+      "blurb": "Adds opensky-pp-cli: a no-auth live aircraft tracker for the OpenSky ADS-B network, with bounding-box state vectors, airport departure windows, and per-aircraft trajectory replays."
     }
   }
 }
