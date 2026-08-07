@@ -62,7 +62,7 @@
       "blurb": "Aligns the Python env parser with the bash one: inline # comments now strip exactly as check-config.sh does, with quotes and escaped quotes handled, so documented .env examples parse correctly."
     },
     "mvanhorn/printing-press-library#1669": {
-      "blurb": "Adds greenhouse-pp-cli: a generic, no-auth CLI for any company public Greenhouse job board, plus a proposal for a new job-boards category in the printing-press library."
+      "blurb": "Adds greenhouse-pp-cli: a generic, no-auth CLI for any company's public Greenhouse job board, plus a proposal for a new job-boards category in the printing-press library."
     }
   }
 }
