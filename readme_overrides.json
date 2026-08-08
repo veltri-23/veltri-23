@@ -40,8 +40,8 @@
     }
   ],
   "pending_overrides": {
-    "DietrichGebert/ponytail#686": {
-      "blurb": "Fixes a crash that could happen when a rule is set up incorrectly. Broken rules are now skipped safely and everything else keeps working."
+    "DietrichGebert/ponytail#704": {
+      "blurb": "Caps the PONYTAIL_SUBAGENT_MATCHER setting at 256 characters. An overlong or invalid value is ignored with a clear warning instead of breaking the hook."
     },
     "block/buzz#4742": {
       "blurb": "Makes turning a workflow 'off' actually stick. Disabled workflows no longer run through any trigger, and they stay off even after a restart."
@@ -69,6 +69,9 @@
     },
     "mvanhorn/printing-press-library#1672": {
       "blurb": "Adds opensky-pp-cli, a free command-line tool that tracks live aircraft using public flight data."
+    },
+    "mvanhorn/cli-printing-press#4013": {
+      "blurb": "Fixes the live dogfood check so help examples that continue across lines are parsed as one command. Generated CLIs with multi-line examples now pass the acceptance run."
     }
   }
 }
