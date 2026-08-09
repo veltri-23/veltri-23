@@ -8,7 +8,8 @@ AI engineer shipping production multi-agent systems across multiple AI models an
 - **[Overview of Hunter's Portfolio](https://hunter-cv.vercel.app)** - Interactive AI CV: agentic RAG, an eval harness that grades it on 38 questions, and 6-layer security, all on free tiers under $5/mo.
 - **[VibeBloat](https://github.com/veltri-23/vibebloat)** [![GitHub stars](https://img.shields.io/github/stars/veltri-23/vibebloat?style=flat&color=gold)](https://github.com/veltri-23/vibebloat) - Reads your agent history and compiles every mistake so the same one is never made twice. Zero token cost.
 - **[ATFG AI Platform](https://hunter-cv.vercel.app/#build)** - Multi-model AI platform I built end to end for outreach, client management, recruiting, and operational automation, with 92% month-over-month retention. Private.
-
+- **[VBrain](https://hunter-cv.vercel.app/#projects)** - A heavily modified fork of GBrain: a persistent graph-memory system with typed entity edges and zero-LLM extraction, so agents never lose context across sessions. Private.
+- **[hermes-gbrain-memory](https://github.com/veltri-23/hermes-gbrain-memory)** [![GitHub stars](https://img.shields.io/github/stars/veltri-23/hermes-gbrain-memory?style=flat&color=gold)](https://github.com/veltri-23/hermes-gbrain-memory) - Standalone GBrain semantic memory provider for Hermes Agent
 <!-- BUILDING:END -->
 
 #### Contributing to
