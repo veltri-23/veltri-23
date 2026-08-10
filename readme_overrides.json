@@ -8,6 +8,7 @@
     {
       "name": "Overview of Hunter's Portfolio",
       "url": "https://hunter-cv.vercel.app",
+      "pin_top": true,
       "blurb": "Interactive AI CV: agentic RAG, an eval harness that grades it on 38 questions, and 6-layer security, all on free tiers under $5/mo."
     },
     {
@@ -31,22 +32,7 @@
       "name": "Printing Press",
       "url": "https://github.com/mvanhorn/cli-printing-press",
       "stars": "mvanhorn/cli-printing-press",
-      "blurb": "Created and contributed three CLIs for the Printing Press library."
-    },
-    {
-      "name": "Paperclip CLI",
-      "url": "https://printingpress.dev/library/project-management/paperclip-self-hosted",
-      "blurb": "Agent-native CLI, skill, and MCP server for self-hosted Paperclip."
-    },
-    {
-      "name": "Zillow CLI",
-      "url": "https://printingpress.dev/library/other/zillow",
-      "blurb": "Housing-market CLI and MCP server using Zillow Research datasets, with local SQLite sync, data-quality checks, and explainable market analysis."
-    },
-    {
-      "name": "OpenSky CLI",
-      "url": "https://printingpress.dev/library/travel/opensky",
-      "blurb": "Free live aircraft tracker for the OpenSky Network's public ADS-B data. No account or key: bounding-box live states, airport departures, full trajectory replay, and offline SQLite sync."
+      "blurb": "Created and contributed **[Paperclip CLI](https://printingpress.dev/library/project-management/paperclip-self-hosted)**, **[Zillow CLI](https://printingpress.dev/library/other/zillow)**, and **[OpenSky CLI](https://printingpress.dev/library/travel/opensky)** for the library."
     }
   ],
   "pending_overrides": {

@@ -43,15 +43,15 @@ def owned_public_repos():
 def building_block():
     entries = []
     for e in OVR.get("building_extra", []):
-        entries.append((star_count(e.get("stars")),
+        entries.append((e.get("pin_top", False), star_count(e.get("stars")),
                         line(e["name"], e["url"], e["blurb"], e.get("stars"))))
     for r in owned_public_repos():
         blurb = OVR.get("building_blurbs", {}).get(r["name"]) or (r["description"] or "").strip()
-        entries.append((r["stargazers_count"],
+        entries.append((False, r["stargazers_count"],
                         line(r["name"], r["html_url"], blurb, r["full_name"])))
-    # highest stars first; ties keep configured order (stable sort)
-    entries.sort(key=lambda t: t[0], reverse=True)
-    return "\n".join(l for _, l in entries) if entries else ""
+    # pinned entries first, then highest stars first; ties keep configured order
+    entries.sort(key=lambda t: (not t[0], -t[1]))
+    return "\n".join(l for _, _, l in entries) if entries else ""
 
 def merged_pr_repos():
     data = json.loads(gh("search", "prs", "--author", USER, "--merged",
@@ -93,11 +93,12 @@ def pending_block():
     if not prs:
         return ""   # whole section (heading included) disappears
     lines = []
-    # group by repo, preserving sorted order (repo, then PR number)
+    # group by repo, then order groups by stars desc; PRs by number within
     by_repo = {}
     for p in prs:
         by_repo.setdefault(p["repository"]["nameWithOwner"], []).append(p)
-    for full, repo_prs in by_repo.items():
+    groups = sorted(by_repo.items(), key=lambda kv: star_count(kv[0]), reverse=True)
+    for full, repo_prs in groups:
         # one badge per repo; each PR gets its own sub-bullet
         b = f' {badge(full)}' if full else ''
         lines.append(f'- **{full}**{b}')
