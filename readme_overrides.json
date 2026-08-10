@@ -71,6 +71,9 @@
     },
     "mvanhorn/cli-printing-press#4013": {
       "blurb": "Fixes the live dogfood check so help examples that continue across lines are parsed as one command. Generated CLIs with multi-line examples now pass the acceptance run."
+    },
+    "mvanhorn/printing-press-library#1687": {
+      "blurb": "Adds discord-pp-cli, a terminal-first Discord server management CLI: channels, messages, members, roles, invites, webhooks, plus read-only guild snapshots, user whois, and per-channel catch-up digests. Bot-token only."
     }
   }
 }
