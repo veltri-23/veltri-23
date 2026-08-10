@@ -9,9 +9,21 @@ USER = "veltri-23"
 ROOT = pathlib.Path(__file__).resolve().parent
 README = ROOT / "README.md"
 OVR = json.loads((ROOT / "readme_overrides.json").read_text(encoding="utf-8"))
+_STARS = {}
 
 def gh(*a):
     return subprocess.run(["gh", *a], capture_output=True, text=True, check=True).stdout
+
+def star_count(full):
+    """Live stargazers_count for owner/repo, cached; 0 when unknown."""
+    if not full:
+        return 0
+    if full not in _STARS:
+        try:
+            _STARS[full] = int(gh("api", f"repos/{full}", "--jq", ".stargazers_count"))
+        except Exception:
+            _STARS[full] = 0
+    return _STARS[full]
 
 def badge(full):
     return (f'[![GitHub stars](https://img.shields.io/github/stars/{full}'
@@ -29,12 +41,17 @@ def owned_public_repos():
     return out
 
 def building_block():
-    lines = [line(e["name"], e["url"], e["blurb"], e.get("stars"))
-             for e in OVR.get("building_extra", [])]
+    entries = []
+    for e in OVR.get("building_extra", []):
+        entries.append((star_count(e.get("stars")),
+                        line(e["name"], e["url"], e["blurb"], e.get("stars"))))
     for r in owned_public_repos():
         blurb = OVR.get("building_blurbs", {}).get(r["name"]) or (r["description"] or "").strip()
-        lines.append(line(r["name"], r["html_url"], blurb, r["full_name"]))
-    return "\n".join(lines) if lines else ""
+        entries.append((r["stargazers_count"],
+                        line(r["name"], r["html_url"], blurb, r["full_name"])))
+    # highest stars first; ties keep configured order (stable sort)
+    entries.sort(key=lambda t: t[0], reverse=True)
+    return "\n".join(l for _, l in entries) if entries else ""
 
 def merged_pr_repos():
     data = json.loads(gh("search", "prs", "--author", USER, "--merged",
@@ -48,13 +65,18 @@ def merged_pr_repos():
     return repos
 
 def contributing_block():
-    lines = [line(e["name"], e["url"], e["blurb"], e.get("stars"))
-             for e in OVR.get("contributing_extra", [])]
-    for full, urls in sorted(merged_pr_repos().items(), key=lambda kv: -len(kv[1])):
+    entries = []
+    for e in OVR.get("contributing_extra", []):
+        entries.append((star_count(e.get("stars")),
+                        line(e["name"], e["url"], e["blurb"], e.get("stars"))))
+    for full, urls in merged_pr_repos().items():
         n = len(urls)
-        lines.append(line(full, f"https://github.com/{full}",
-                          f'{n} merged PR{"s" if n>1 else ""}', full))
-    return "\n".join(lines) if lines else ""
+        entries.append((star_count(full),
+                        line(full, f"https://github.com/{full}",
+                             f'{n} merged PR{"s" if n>1 else ""}', full)))
+    # highest stars first; ties keep configured order (stable sort)
+    entries.sort(key=lambda t: t[0], reverse=True)
+    return "\n".join(l for _, l in entries) if entries else ""
 
 def open_prs():
     """Non-draft PRs still awaiting review on repos I don't own."""

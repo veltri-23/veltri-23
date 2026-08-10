@@ -20,11 +20,6 @@
       "name": "ATFG AI Platform",
       "url": "https://hunter-cv.vercel.app/#build",
       "blurb": "Multi-model AI platform I built end to end for outreach, client management, recruiting, and operational automation, with 92% month-over-month retention. Private."
-    },
-    {
-      "name": "VBrain",
-      "url": "https://hunter-cv.vercel.app/#projects",
-      "blurb": "A heavily modified fork of GBrain: a persistent graph-memory system with typed entity edges and zero-LLM extraction, so agents never lose context across sessions. Private."
     }
   ],
   "building_blurbs": {},
