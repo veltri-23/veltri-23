@@ -34,7 +34,7 @@ def building_block():
     for r in owned_public_repos():
         blurb = OVR.get("building_blurbs", {}).get(r["name"]) or (r["description"] or "").strip()
         lines.append(line(r["name"], r["html_url"], blurb, r["full_name"]))
-    return "\n".join(lines)
+    return "\n".join(lines) if lines else ""
 
 def merged_pr_repos():
     data = json.loads(gh("search", "prs", "--author", USER, "--merged",
@@ -54,7 +54,7 @@ def contributing_block():
         n = len(urls)
         lines.append(line(full, f"https://github.com/{full}",
                           f'{n} merged PR{"s" if n>1 else ""}', full))
-    return "\n".join(lines) if lines else "_(nothing yet)_"
+    return "\n".join(lines) if lines else ""
 
 def open_prs():
     """Non-draft PRs still awaiting review on repos I don't own."""
@@ -66,34 +66,34 @@ def open_prs():
             and p["repository"]["nameWithOwner"] not in OVR.get("pending_exclude", [])]
 
 def pending_block():
-    """Open PRs grouped by repo: one line per repo, each PR its own link."""
+    """Open PRs grouped by repo: repo line, then one bullet per PR."""
     prs = sorted(open_prs(), key=lambda p: (p["repository"]["nameWithOwner"], p["number"]))
     if not prs:
         return ""   # whole section (heading included) disappears
-    lines = ["#### Open pull request contributions"]
+    lines = []
     # group by repo, preserving sorted order (repo, then PR number)
     by_repo = {}
     for p in prs:
         by_repo.setdefault(p["repository"]["nameWithOwner"], []).append(p)
     for full, repo_prs in by_repo.items():
-        # one badge per repo; each PR is its own bracketed link
+        # one badge per repo; each PR gets its own sub-bullet
         b = f' {badge(full)}' if full else ''
-        pr_links = []
+        lines.append(f'- **{full}**{b}')
         for p in repo_prs:
             o = OVR.get("pending_overrides", {}).get(f'{full}#{p["number"]}', {})
             blurb = o.get("blurb", p["title"])
             link = f'[#{p["number"]}]({p["url"]})'
-            pr_links.append(f'{link} - {blurb}' if blurb else link)
-        lines.append(f'- **{full}**{b} - ' + ' | '.join(pr_links))
+            lines.append(f'  - {link} - {blurb}' if blurb else f'  - {link}')
     return "\n".join(lines)
 
-def replace(md, key, body):
+def replace(md, key, heading, body):
     s, e = f"<!-- {key}:START -->", f"<!-- {key}:END -->"
-    new = f"{s}\n{body}\n{e}" if body else f"{s}\n{e}"
+    content = f"{heading}\n{body}" if body else ""
+    new = f"{s}\n{content}\n{e}"
     return re.sub(re.escape(s)+r".*?"+re.escape(e), new, md, flags=re.S)
 
 md = README.read_text(encoding="utf-8")
-md = replace(md, "BUILDING", building_block())
-md = replace(md, "CONTRIB", contributing_block())
-md = replace(md, "PENDING", pending_block())
+md = replace(md, "BUILDING", "#### Building", building_block())
+md = replace(md, "CONTRIB", "#### Contributing to", contributing_block())
+md = replace(md, "PENDING", "#### Open pull request contributions", pending_block())
 README.write_text(md, encoding="utf-8")

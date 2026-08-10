@@ -36,7 +36,22 @@
       "name": "Printing Press",
       "url": "https://github.com/mvanhorn/cli-printing-press",
       "stars": "mvanhorn/cli-printing-press",
-      "blurb": "Created and contributed **[Paperclip CLI](https://printingpress.dev/library/project-management/paperclip-self-hosted)**, an agent-native CLI, skill, and MCP server for self-hosted Paperclip, plus **[Zillow CLI](https://printingpress.dev/library/other/zillow)**, a housing-market CLI and MCP server using Zillow Research datasets, local SQLite sync, data-quality checks, and explainable market analysis."
+      "blurb": "Created and contributed three CLIs for the Printing Press library."
+    },
+    {
+      "name": "Paperclip CLI",
+      "url": "https://printingpress.dev/library/project-management/paperclip-self-hosted",
+      "blurb": "Agent-native CLI, skill, and MCP server for self-hosted Paperclip."
+    },
+    {
+      "name": "Zillow CLI",
+      "url": "https://printingpress.dev/library/other/zillow",
+      "blurb": "Housing-market CLI and MCP server using Zillow Research datasets, with local SQLite sync, data-quality checks, and explainable market analysis."
+    },
+    {
+      "name": "OpenSky CLI",
+      "url": "https://printingpress.dev/library/travel/opensky",
+      "blurb": "Free live aircraft tracker for the OpenSky Network's public ADS-B data. No account or key: bounding-box live states, airport departures, full trajectory replay, and offline SQLite sync."
     }
   ],
   "pending_overrides": {
@@ -49,14 +64,20 @@
     "NousResearch/hermes-agent#76616": {
       "blurb": "Adds a safe way to restart the Hermes Desktop app's current connection, with a confirmation prompt before anything happens. Cloud and remote connections keep their existing behavior."
     },
+    "NousResearch/hermes-agent#82649": {
+      "blurb": "Adds end-to-end support for standalone memory providers, so Hermes can use external memory backends like GBrain."
+    },
     "garrytan/gbrain#3776": {
       "blurb": "Restores search-by-meaning for saved insights, so the think feature can find related notes even when the wording is different."
     },
-    "stablyai/orca#12139": {
-      "blurb": "Fixes the Tasks view when it pulls items from several GitHub repos at once, so the list is complete, correctly ordered, and nothing gets skipped or duplicated."
-    },
     "garrytan/gbrain#3832": {
       "blurb": "Fixes the autopilot feature on Windows by finding its own launcher more reliably, with extra safety checks against common startup problems."
+    },
+    "garrytan/gbrain#3928": {
+      "blurb": "Shows how to run GBrain as Hermes' long-term memory, with plain-English setup and install steps."
+    },
+    "stablyai/orca#12139": {
+      "blurb": "Fixes the Tasks view when it pulls items from several GitHub repos at once, so the list is complete, correctly ordered, and nothing gets skipped or duplicated."
     },
     "mvanhorn/last30days-skill#948": {
       "blurb": "Makes the Python and bash versions of the environment loader handle comments and quotes the same way, so the documented examples work as written."
@@ -66,9 +87,6 @@
     },
     "mvanhorn/printing-press-library#1670": {
       "blurb": "Adds lever-pp-cli, the same kind of tool for Lever job boards, pulling live job postings for any company."
-    },
-    "mvanhorn/printing-press-library#1672": {
-      "blurb": "Adds opensky-pp-cli, a free command-line tool that tracks live aircraft using public flight data."
     },
     "mvanhorn/cli-printing-press#4013": {
       "blurb": "Fixes the live dogfood check so help examples that continue across lines are parsed as one command. Generated CLIs with multi-line examples now pass the acceptance run."
