@@ -32,7 +32,7 @@
       "name": "Printing Press",
       "url": "https://github.com/mvanhorn/cli-printing-press",
       "stars": "mvanhorn/cli-printing-press",
-      "blurb": "Created and contributed **[Paperclip CLI](https://printingpress.dev/library/project-management/paperclip-self-hosted)**, **[Zillow CLI](https://printingpress.dev/library/other/zillow)**, and **[OpenSky CLI](https://printingpress.dev/library/travel/opensky)** for the library."
+      "blurb": "Created and contributed **[Paperclip CLI](https://printingpress.dev/library/project-management/paperclip-self-hosted)**, **[Zillow CLI](https://printingpress.dev/library/other/zillow)**, and **[OpenSky CLI](https://printingpress.dev/library/travel/opensky)** for the library, and fixed the dogfood check so help examples that continue across lines parse as one command."
     }
   ],
   "pending_overrides": {

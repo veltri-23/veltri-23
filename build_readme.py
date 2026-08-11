@@ -55,25 +55,33 @@ def building_block():
 
 def merged_pr_repos():
     data = json.loads(gh("search", "prs", "--author", USER, "--merged",
-                         "--limit", "200", "--json", "repository,url"))
+                         "--limit", "200", "--json", "repository,url,number,title"))
     repos = {}
     for pr in data:
         full = pr["repository"]["nameWithOwner"]
         if full.split("/")[0] == USER or full in OVR.get("contributing_exclude", []):
             continue
-        repos.setdefault(full, []).append(pr["url"])
+        repos.setdefault(full, []).append(pr)
     return repos
 
 def contributing_block():
+    curated = {e["url"].rstrip("/").replace("https://github.com/", "")
+               for e in OVR.get("contributing_extra", [])}
     entries = []
     for e in OVR.get("contributing_extra", []):
         entries.append((star_count(e.get("stars")),
                         line(e["name"], e["url"], e["blurb"], e.get("stars"))))
-    for full, urls in merged_pr_repos().items():
-        n = len(urls)
-        entries.append((star_count(full),
-                        line(full, f"https://github.com/{full}",
-                             f'{n} merged PR{"s" if n>1 else ""}', full)))
+    for full, prs in merged_pr_repos().items():
+        if full in curated:   # curated blurb already covers this repo
+            continue
+        b = f' {badge(full)}' if full else ''
+        lines = [f'- **{full}**{b}']
+        for p in prs:
+            o = OVR.get("pending_overrides", {}).get(f'{full}#{p["number"]}', {})
+            blurb = o.get("blurb", p["title"])
+            link = f'[#{p["number"]}]({p["url"]})'
+            lines.append(f'  - {link} - {blurb}' if blurb else f'  - {link}')
+        entries.append((star_count(full), "\n".join(lines)))
     # highest stars first; ties keep configured order (stable sort)
     entries.sort(key=lambda t: t[0], reverse=True)
     return "\n".join(l for _, l in entries) if entries else ""

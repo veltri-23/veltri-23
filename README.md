@@ -15,8 +15,7 @@ Python, TypeScript, React, PostgreSQL, Docker, multi-agent orchestration, LLM to
 
 <!-- CONTRIB:START -->
 #### Contributing to
-- **[Printing Press](https://github.com/mvanhorn/cli-printing-press)** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/cli-printing-press?style=flat&color=gold)](https://github.com/mvanhorn/cli-printing-press) - Created and contributed **[Paperclip CLI](https://printingpress.dev/library/project-management/paperclip-self-hosted)**, **[Zillow CLI](https://printingpress.dev/library/other/zillow)**, and **[OpenSky CLI](https://printingpress.dev/library/travel/opensky)** for the library.
-- **[mvanhorn/cli-printing-press](https://github.com/mvanhorn/cli-printing-press)** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/cli-printing-press?style=flat&color=gold)](https://github.com/mvanhorn/cli-printing-press) - 1 merged PR
+- **[Printing Press](https://github.com/mvanhorn/cli-printing-press)** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/cli-printing-press?style=flat&color=gold)](https://github.com/mvanhorn/cli-printing-press) - Created and contributed **[Paperclip CLI](https://printingpress.dev/library/project-management/paperclip-self-hosted)**, **[Zillow CLI](https://printingpress.dev/library/other/zillow)**, and **[OpenSky CLI](https://printingpress.dev/library/travel/opensky)** for the library, and fixed the dogfood check so help examples that continue across lines parse as one command.
 <!-- CONTRIB:END -->
 
 <!-- PENDING:START -->
