@@ -16,6 +16,7 @@ Python, TypeScript, React, PostgreSQL, Docker, multi-agent orchestration, LLM to
 <!-- CONTRIB:START -->
 #### Contributing to
 - **[Printing Press](https://github.com/mvanhorn/cli-printing-press)** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/cli-printing-press?style=flat&color=gold)](https://github.com/mvanhorn/cli-printing-press) - Created and contributed **[Paperclip CLI](https://printingpress.dev/library/project-management/paperclip-self-hosted)**, **[Zillow CLI](https://printingpress.dev/library/other/zillow)**, and **[OpenSky CLI](https://printingpress.dev/library/travel/opensky)** for the library.
+- **[mvanhorn/cli-printing-press](https://github.com/mvanhorn/cli-printing-press)** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/cli-printing-press?style=flat&color=gold)](https://github.com/mvanhorn/cli-printing-press) - 1 merged PR
 <!-- CONTRIB:END -->
 
 <!-- PENDING:START -->
@@ -37,8 +38,6 @@ Python, TypeScript, React, PostgreSQL, Docker, multi-agent orchestration, LLM to
   - [#3928](https://github.com/garrytan/gbrain/pull/3928) - Shows how to run GBrain as Hermes' long-term memory, with plain-English setup and install steps.
 - **block/buzz** [![GitHub stars](https://img.shields.io/github/stars/block/buzz?style=flat&color=gold)](https://github.com/block/buzz)
   - [#4742](https://github.com/block/buzz/pull/4742) - Makes turning a workflow 'off' actually stick. Disabled workflows no longer run through any trigger, and they stay off even after a restart.
-- **mvanhorn/cli-printing-press** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/cli-printing-press?style=flat&color=gold)](https://github.com/mvanhorn/cli-printing-press)
-  - [#4013](https://github.com/mvanhorn/cli-printing-press/pull/4013) - Fixes the live dogfood check so help examples that continue across lines are parsed as one command. Generated CLIs with multi-line examples now pass the acceptance run.
 - **mvanhorn/printing-press-library** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/printing-press-library?style=flat&color=gold)](https://github.com/mvanhorn/printing-press-library)
   - [#1669](https://github.com/mvanhorn/printing-press-library/pull/1669) - Adds greenhouse-pp-cli, a simple command-line tool that lists open jobs from any company's public Greenhouse job board. No account or API key needed.
   - [#1670](https://github.com/mvanhorn/printing-press-library/pull/1670) - Adds lever-pp-cli, the same kind of tool for Lever job boards, pulling live job postings for any company.
