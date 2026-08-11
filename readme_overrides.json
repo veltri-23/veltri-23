@@ -74,6 +74,9 @@
     },
     "mvanhorn/printing-press-library#1687": {
       "blurb": "Adds discord-pp-cli, a terminal-first Discord server management CLI: channels, messages, members, roles, invites, webhooks, plus read-only guild snapshots, user whois, and per-channel catch-up digests. Bot-token only."
+    },
+    "rtk-ai/rtk#3538": {
+      "blurb": "Stops rtk from hiding the biggest disk consumers. du summary and depth-limited output now passes through unfiltered, so a disk survey reports every entry instead of only the first 40."
     }
   }
 }

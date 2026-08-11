@@ -25,6 +25,8 @@ Python, TypeScript, React, PostgreSQL, Docker, multi-agent orchestration, LLM to
   - [#82649](https://github.com/NousResearch/hermes-agent/pull/82649) - Adds end-to-end support for standalone memory providers, so Hermes can use external memory backends like GBrain.
 - **DietrichGebert/ponytail** [![GitHub stars](https://img.shields.io/github/stars/DietrichGebert/ponytail?style=flat&color=gold)](https://github.com/DietrichGebert/ponytail)
   - [#704](https://github.com/DietrichGebert/ponytail/pull/704) - Caps the PONYTAIL_SUBAGENT_MATCHER setting at 256 characters. An overlong or invalid value is ignored with a clear warning instead of breaking the hook.
+- **rtk-ai/rtk** [![GitHub stars](https://img.shields.io/github/stars/rtk-ai/rtk?style=flat&color=gold)](https://github.com/rtk-ai/rtk)
+  - [#3538](https://github.com/rtk-ai/rtk/pull/3538) - Stops rtk from hiding the biggest disk consumers. du summary and depth-limited output now passes through unfiltered, so a disk survey reports every entry instead of only the first 40.
 - **mvanhorn/last30days-skill** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/last30days-skill?style=flat&color=gold)](https://github.com/mvanhorn/last30days-skill)
   - [#948](https://github.com/mvanhorn/last30days-skill/pull/948) - Makes the Python and bash versions of the environment loader handle comments and quotes the same way, so the documented examples work as written.
 - **stablyai/orca** [![GitHub stars](https://img.shields.io/github/stars/stablyai/orca?style=flat&color=gold)](https://github.com/stablyai/orca)
