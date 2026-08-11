@@ -24,9 +24,7 @@
     }
   ],
   "building_blurbs": {},
-  "contributing_exclude": [
-    "mvanhorn/printing-press-library"
-  ],
+  "contributing_exclude": [],
   "contributing_extra": [
     {
       "name": "Printing Press",

@@ -16,6 +16,7 @@ Python, TypeScript, React, PostgreSQL, Docker, multi-agent orchestration, LLM to
 <!-- CONTRIB:START -->
 #### Contributing to
 - **[Printing Press](https://github.com/mvanhorn/cli-printing-press)** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/cli-printing-press?style=flat&color=gold)](https://github.com/mvanhorn/cli-printing-press) - Created and contributed **[Paperclip CLI](https://printingpress.dev/library/project-management/paperclip-self-hosted)**, **[Zillow CLI](https://printingpress.dev/library/other/zillow)**, and **[OpenSky CLI](https://printingpress.dev/library/travel/opensky)** for the library.
+- **[mvanhorn/printing-press-library](https://github.com/mvanhorn/printing-press-library)** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/printing-press-library?style=flat&color=gold)](https://github.com/mvanhorn/printing-press-library) - 3 merged PRs
 <!-- CONTRIB:END -->
 
 <!-- PENDING:START -->
