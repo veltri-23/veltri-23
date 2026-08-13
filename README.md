@@ -41,4 +41,6 @@ Python, TypeScript, React, PostgreSQL, Docker, multi-agent orchestration, LLM to
   - [#1670](https://github.com/mvanhorn/printing-press-library/pull/1670) - Adds lever-pp-cli, the same kind of tool for Lever job boards, pulling live job postings for any company.
 - **okdevme/DiscordPlugins** [![GitHub stars](https://img.shields.io/github/stars/okdevme/DiscordPlugins?style=flat&color=gold)](https://github.com/okdevme/DiscordPlugins)
   - [#194](https://github.com/okdevme/DiscordPlugins/pull/194) - Fix thread previews on current Discord builds (component no longer renders, add DOM fallback)
+- **tmchow/hermes-kids-profile-blueprint** [![GitHub stars](https://img.shields.io/github/stars/tmchow/hermes-kids-profile-blueprint?style=flat&color=gold)](https://github.com/tmchow/hermes-kids-profile-blueprint)
+  - [#1](https://github.com/tmchow/hermes-kids-profile-blueprint/pull/1) - Adds a Windows launcher template to the kids profile starter kit, so a standalone Hermes home for a child profile runs from one double-click script, with deployment notes and hygiene checks.
 <!-- PENDING:END -->

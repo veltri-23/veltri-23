@@ -3,7 +3,8 @@
     "veltri-23",
     "printing-press-library",
     "vibebloat",
-    "hermes-kids-profile-blueprint"
+    "hermes-kids-profile-blueprint",
+    "hermes-kids-profile-blueprint-mirror"
   ],
   "building_extra": [
     {
@@ -84,6 +85,9 @@
     },
     "rtk-ai/rtk#3538": {
       "blurb": "Stops rtk from hiding the biggest disk consumers. du summary and depth-limited output now passes through unfiltered, so a disk survey reports every entry instead of only the first 40."
+    },
+    "tmchow/hermes-kids-profile-blueprint#1": {
+      "blurb": "Adds a Windows launcher template to the kids profile starter kit, so a standalone Hermes home for a child profile runs from one double-click script, with deployment notes and hygiene checks."
     }
   }
 }
