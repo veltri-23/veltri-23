@@ -29,9 +29,10 @@ def badge(full):
     return (f'[![GitHub stars](https://img.shields.io/github/stars/{full}'
             f'?style=flat&color=gold)](https://github.com/{full})')
 
-def line(name, url, blurb, stars=None):
+def line(name, url, blurb, stars=None, link_name=True):
     b = f' {badge(stars)}' if stars else ''
-    return f'- **[{name}]({url})**{b} - {blurb}' if blurb else f'- **[{name}]({url})**{b}'
+    head = f'- **[{name}]({url})**' if link_name else f'- **{name}**'
+    return f'{head}{b} - {blurb}' if blurb else f'{head}{b}'
 
 def owned_public_repos():
     data = json.loads(gh("api", f"users/{USER}/repos?per_page=100&type=owner", "--paginate"))
@@ -70,7 +71,7 @@ def contributing_block():
     entries = []
     for e in OVR.get("contributing_extra", []):
         entries.append((star_count(e.get("stars")),
-                        line(e["name"], e["url"], e["blurb"], e.get("stars"))))
+                        line(e["name"], e["url"], e["blurb"], e.get("stars"), link_name=False)))
     for full, prs in merged_pr_repos().items():
         if full in curated:   # curated blurb already covers this repo
             continue

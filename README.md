@@ -11,12 +11,13 @@ Python, TypeScript, React, PostgreSQL, Docker, multi-agent orchestration, LLM to
 - **[VibeBloat](https://github.com/veltri-23/vibebloat)** [![GitHub stars](https://img.shields.io/github/stars/veltri-23/vibebloat?style=flat&color=gold)](https://github.com/veltri-23/vibebloat) - Reads your agent history and compiles every mistake so the same one is never made twice. Zero token cost.
 - **[hermes-gbrain-memory](https://github.com/veltri-23/hermes-gbrain-memory)** [![GitHub stars](https://img.shields.io/github/stars/veltri-23/hermes-gbrain-memory?style=flat&color=gold)](https://github.com/veltri-23/hermes-gbrain-memory) - Standalone GBrain semantic memory provider for Hermes Agent
 - **[ATFG AI Platform](https://hunter-cv.vercel.app/#build)** - Multi-model AI platform I built end to end for outreach, client management, recruiting, and operational automation, with 92% month-over-month retention. Private.
+- **[hermes-kids-profile-blueprint](https://github.com/veltri-23/hermes-kids-profile-blueprint)** [![GitHub stars](https://img.shields.io/github/stars/veltri-23/hermes-kids-profile-blueprint?style=flat&color=gold)](https://github.com/veltri-23/hermes-kids-profile-blueprint) - PRE-RELEASE: parent-operated reference work for restricted child-facing Hermes profiles. Not ready for child use.
 <!-- BUILDING:END -->
 
 <!-- CONTRIB:START -->
 #### Contributing to
-- **Printing Press** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/cli-printing-press?style=flat&color=gold)](https://github.com/mvanhorn/cli-printing-press) - Created and contributed **[Paperclip CLI](https://printingpress.dev/library/project-management/paperclip-self-hosted)**, **[Zillow CLI](https://printingpress.dev/library/other/zillow)**, **[OpenSky CLI](https://printingpress.dev/library/travel/opensky)**, and **[Discord CLI](https://printingpress.dev/library/productivity/discord)** for the library, and **[fixed the dogfood check](https://github.com/mvanhorn/cli-printing-press/pull/4013)** so help examples that continue across lines parse as one command.
 - **gbrain** [![GitHub stars](https://img.shields.io/github/stars/garrytan/gbrain?style=flat&color=gold)](https://github.com/garrytan/gbrain) - **[Fixed the autopilot feature on Windows](https://github.com/garrytan/gbrain/pull/3832)** so it finds its own launcher reliably, with extra safety checks against common startup problems.
+- **Printing Press** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/cli-printing-press?style=flat&color=gold)](https://github.com/mvanhorn/cli-printing-press) - Created and contributed **[Paperclip CLI](https://printingpress.dev/library/project-management/paperclip-self-hosted)**, **[Zillow CLI](https://printingpress.dev/library/other/zillow)**, **[OpenSky CLI](https://printingpress.dev/library/travel/opensky)**, and **[Discord CLI](https://printingpress.dev/library/productivity/discord)** for the library, and **[fixed the dogfood check](https://github.com/mvanhorn/cli-printing-press/pull/4013)** so help examples that continue across lines parse as one command.
 <!-- CONTRIB:END -->
 
 <!-- PENDING:START -->
@@ -34,7 +35,6 @@ Python, TypeScript, React, PostgreSQL, Docker, multi-agent orchestration, LLM to
   - [#12139](https://github.com/stablyai/orca/pull/12139) - Fixes the Tasks view when it pulls items from several GitHub repos at once, so the list is complete, correctly ordered, and nothing gets skipped or duplicated.
 - **garrytan/gbrain** [![GitHub stars](https://img.shields.io/github/stars/garrytan/gbrain?style=flat&color=gold)](https://github.com/garrytan/gbrain)
   - [#3776](https://github.com/garrytan/gbrain/pull/3776) - Restores search-by-meaning for saved insights, so the think feature can find related notes even when the wording is different.
-  - [#3928](https://github.com/garrytan/gbrain/pull/3928) - Shows how to run GBrain as Hermes' long-term memory, with plain-English setup and install steps.
 - **block/buzz** [![GitHub stars](https://img.shields.io/github/stars/block/buzz?style=flat&color=gold)](https://github.com/block/buzz)
   - [#4742](https://github.com/block/buzz/pull/4742) - Makes turning a workflow 'off' actually stick. Disabled workflows no longer run through any trigger, and they stay off even after a restart.
 - **mvanhorn/printing-press-library** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/printing-press-library?style=flat&color=gold)](https://github.com/mvanhorn/printing-press-library)

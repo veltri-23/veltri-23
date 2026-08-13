@@ -32,7 +32,13 @@
       "name": "Printing Press",
       "url": "https://github.com/mvanhorn/cli-printing-press",
       "stars": "mvanhorn/cli-printing-press",
-      "blurb": "Created and contributed **[Paperclip CLI](https://printingpress.dev/library/project-management/paperclip-self-hosted)**, **[Zillow CLI](https://printingpress.dev/library/other/zillow)**, and **[OpenSky CLI](https://printingpress.dev/library/travel/opensky)** for the library, and **[fixed the dogfood check](https://github.com/mvanhorn/cli-printing-press/pull/4013)** so help examples that continue across lines parse as one command."
+      "blurb": "Created and contributed **[Paperclip CLI](https://printingpress.dev/library/project-management/paperclip-self-hosted)**, **[Zillow CLI](https://printingpress.dev/library/other/zillow)**, **[OpenSky CLI](https://printingpress.dev/library/travel/opensky)**, and **[Discord CLI](https://printingpress.dev/library/productivity/discord)** for the library, and **[fixed the dogfood check](https://github.com/mvanhorn/cli-printing-press/pull/4013)** so help examples that continue across lines parse as one command."
+    },
+    {
+      "name": "gbrain",
+      "url": "https://github.com/garrytan/gbrain",
+      "stars": "garrytan/gbrain",
+      "blurb": "**[Fixed the autopilot feature on Windows](https://github.com/garrytan/gbrain/pull/3832)** so it finds its own launcher reliably, with extra safety checks against common startup problems."
     }
   ],
   "pending_overrides": {
