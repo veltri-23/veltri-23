@@ -11,7 +11,6 @@ Python, TypeScript, React, PostgreSQL, Docker, multi-agent orchestration, LLM to
 - **[VibeBloat](https://github.com/veltri-23/vibebloat)** [![GitHub stars](https://img.shields.io/github/stars/veltri-23/vibebloat?style=flat&color=gold)](https://github.com/veltri-23/vibebloat) - Reads your agent history and compiles every mistake so the same one is never made twice. Zero token cost.
 - **[hermes-gbrain-memory](https://github.com/veltri-23/hermes-gbrain-memory)** [![GitHub stars](https://img.shields.io/github/stars/veltri-23/hermes-gbrain-memory?style=flat&color=gold)](https://github.com/veltri-23/hermes-gbrain-memory) - Standalone GBrain semantic memory provider for Hermes Agent
 - **[ATFG AI Platform](https://hunter-cv.vercel.app/#build)** - Multi-model AI platform I built end to end for outreach, client management, recruiting, and operational automation, with 92% month-over-month retention. Private.
-- **[hermes-kids-profile-blueprint](https://github.com/veltri-23/hermes-kids-profile-blueprint)** [![GitHub stars](https://img.shields.io/github/stars/veltri-23/hermes-kids-profile-blueprint?style=flat&color=gold)](https://github.com/veltri-23/hermes-kids-profile-blueprint) - PRE-RELEASE: parent-operated reference work for restricted child-facing Hermes profiles. Not ready for child use.
 <!-- BUILDING:END -->
 
 <!-- CONTRIB:START -->

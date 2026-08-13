@@ -2,7 +2,8 @@
   "building_exclude": [
     "veltri-23",
     "printing-press-library",
-    "vibebloat"
+    "vibebloat",
+    "hermes-kids-profile-blueprint"
   ],
   "building_extra": [
     {
