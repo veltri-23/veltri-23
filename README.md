@@ -16,6 +16,10 @@ Python, TypeScript, React, PostgreSQL, Docker, multi-agent orchestration, LLM to
 <!-- CONTRIB:START -->
 #### Contributing to
 - **[Printing Press](https://github.com/mvanhorn/cli-printing-press)** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/cli-printing-press?style=flat&color=gold)](https://github.com/mvanhorn/cli-printing-press) - Created and contributed **[Paperclip CLI](https://printingpress.dev/library/project-management/paperclip-self-hosted)**, **[Zillow CLI](https://printingpress.dev/library/other/zillow)**, and **[OpenSky CLI](https://printingpress.dev/library/travel/opensky)** for the library, and **[fixed the dogfood check](https://github.com/mvanhorn/cli-printing-press/pull/4013)** so help examples that continue across lines parse as one command.
+- **mvanhorn/printing-press-library** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/printing-press-library?style=flat&color=gold)](https://github.com/mvanhorn/printing-press-library)
+  - [#1687](https://github.com/mvanhorn/printing-press-library/pull/1687) - Adds **discord-pp-cli**, a terminal-first Discord server management CLI: channels, messages, members, roles, invites, webhooks, plus read-only guild snapshots, user whois, and per-channel catch-up digests. Bot-token only. [Library page](https://printingpress.dev/library/productivity/discord)
+- **garrytan/gbrain** [![GitHub stars](https://img.shields.io/github/stars/garrytan/gbrain?style=flat&color=gold)](https://github.com/garrytan/gbrain)
+  - [#3832](https://github.com/garrytan/gbrain/pull/3832) - Fixes the autopilot feature on Windows by finding its own launcher more reliably, with extra safety checks against common startup problems.
 <!-- CONTRIB:END -->
 
 <!-- PENDING:START -->
@@ -33,14 +37,12 @@ Python, TypeScript, React, PostgreSQL, Docker, multi-agent orchestration, LLM to
   - [#12139](https://github.com/stablyai/orca/pull/12139) - Fixes the Tasks view when it pulls items from several GitHub repos at once, so the list is complete, correctly ordered, and nothing gets skipped or duplicated.
 - **garrytan/gbrain** [![GitHub stars](https://img.shields.io/github/stars/garrytan/gbrain?style=flat&color=gold)](https://github.com/garrytan/gbrain)
   - [#3776](https://github.com/garrytan/gbrain/pull/3776) - Restores search-by-meaning for saved insights, so the think feature can find related notes even when the wording is different.
-  - [#3832](https://github.com/garrytan/gbrain/pull/3832) - Fixes the autopilot feature on Windows by finding its own launcher more reliably, with extra safety checks against common startup problems.
   - [#3928](https://github.com/garrytan/gbrain/pull/3928) - Shows how to run GBrain as Hermes' long-term memory, with plain-English setup and install steps.
 - **block/buzz** [![GitHub stars](https://img.shields.io/github/stars/block/buzz?style=flat&color=gold)](https://github.com/block/buzz)
   - [#4742](https://github.com/block/buzz/pull/4742) - Makes turning a workflow 'off' actually stick. Disabled workflows no longer run through any trigger, and they stay off even after a restart.
 - **mvanhorn/printing-press-library** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/printing-press-library?style=flat&color=gold)](https://github.com/mvanhorn/printing-press-library)
   - [#1669](https://github.com/mvanhorn/printing-press-library/pull/1669) - Adds greenhouse-pp-cli, a simple command-line tool that lists open jobs from any company's public Greenhouse job board. No account or API key needed.
   - [#1670](https://github.com/mvanhorn/printing-press-library/pull/1670) - Adds lever-pp-cli, the same kind of tool for Lever job boards, pulling live job postings for any company.
-  - [#1687](https://github.com/mvanhorn/printing-press-library/pull/1687) - Adds discord-pp-cli, a terminal-first Discord server management CLI: channels, messages, members, roles, invites, webhooks, plus read-only guild snapshots, user whois, and per-channel catch-up digests. Bot-token only.
 - **okdevme/DiscordPlugins** [![GitHub stars](https://img.shields.io/github/stars/okdevme/DiscordPlugins?style=flat&color=gold)](https://github.com/okdevme/DiscordPlugins)
   - [#194](https://github.com/okdevme/DiscordPlugins/pull/194) - Fix thread previews on current Discord builds (component no longer renders, add DOM fallback)
 <!-- PENDING:END -->
