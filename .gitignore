@@ -1,3 +1,6 @@
 .gstack/
 repo/
 __pycache__/
+
+# codegraph index is local-only; never commit it
+.codegraph/
