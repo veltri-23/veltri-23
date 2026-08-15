@@ -34,11 +34,10 @@ Python, TypeScript, React, PostgreSQL, Docker, multi-agent orchestration, LLM to
   - [#12139](https://github.com/stablyai/orca/pull/12139) - Fixes the Tasks view when it pulls items from several GitHub repos at once, so the list is complete, correctly ordered, and nothing gets skipped or duplicated.
 - **garrytan/gbrain** [![GitHub stars](https://img.shields.io/github/stars/garrytan/gbrain?style=flat&color=gold)](https://github.com/garrytan/gbrain)
   - [#3776](https://github.com/garrytan/gbrain/pull/3776) - Restores search-by-meaning for saved insights, so the think feature can find related notes even when the wording is different.
+  - [#4104](https://github.com/garrytan/gbrain/pull/4104) - v0.45.11.0 feat(sources): github source kind, issues and PRs live in the brain (#4086)
 - **block/buzz** [![GitHub stars](https://img.shields.io/github/stars/block/buzz?style=flat&color=gold)](https://github.com/block/buzz)
   - [#4742](https://github.com/block/buzz/pull/4742) - Makes turning a workflow 'off' actually stick. Disabled workflows no longer run through any trigger, and they stay off even after a restart.
 - **mvanhorn/printing-press-library** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/printing-press-library?style=flat&color=gold)](https://github.com/mvanhorn/printing-press-library)
   - [#1669](https://github.com/mvanhorn/printing-press-library/pull/1669) - Adds greenhouse-pp-cli, a simple command-line tool that lists open jobs from any company's public Greenhouse job board. No account or API key needed.
   - [#1670](https://github.com/mvanhorn/printing-press-library/pull/1670) - Adds lever-pp-cli, the same kind of tool for Lever job boards, pulling live job postings for any company.
-- **tmchow/hermes-kids-profile-blueprint** [![GitHub stars](https://img.shields.io/github/stars/tmchow/hermes-kids-profile-blueprint?style=flat&color=gold)](https://github.com/tmchow/hermes-kids-profile-blueprint)
-  - [#1](https://github.com/tmchow/hermes-kids-profile-blueprint/pull/1) - Adds a Windows launcher template to the kids profile starter kit, so a standalone Hermes home for a child profile runs from one double-click script, with deployment notes and hygiene checks.
 <!-- PENDING:END -->
