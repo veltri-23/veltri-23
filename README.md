@@ -16,7 +16,7 @@ Python, TypeScript, React, PostgreSQL, Docker, multi-agent orchestration, LLM to
 <!-- CONTRIB:START -->
 #### Contributing to
 - **gbrain** [![GitHub stars](https://img.shields.io/github/stars/garrytan/gbrain?style=flat&color=gold)](https://github.com/garrytan/gbrain) - **[Fixed the autopilot feature on Windows](https://github.com/garrytan/gbrain/pull/3832)** so it finds its own launcher reliably, with extra safety checks against common startup problems.
-- **Printing Press** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/cli-printing-press?style=flat&color=gold)](https://github.com/mvanhorn/cli-printing-press) - Created and contributed **[Paperclip CLI](https://printingpress.dev/library/project-management/paperclip-self-hosted)**, **[Zillow CLI](https://printingpress.dev/library/other/zillow)**, **[OpenSky CLI](https://printingpress.dev/library/travel/opensky)**, and **[Discord CLI](https://printingpress.dev/library/productivity/discord)** for the library, and **[fixed the dogfood check](https://github.com/mvanhorn/cli-printing-press/pull/4013)** so help examples that continue across lines parse as one command.
+- **Printing Press** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/cli-printing-press?style=flat&color=gold)](https://github.com/mvanhorn/cli-printing-press) - Created and contributed **[Paperclip CLI](https://printingpress.dev/library/project-management/paperclip-self-hosted)**, **[Zillow CLI](https://printingpress.dev/library/other/zillow)**, **[Greenhouse CLI](https://printingpress.dev/library/other/greenhouse)**, **[Lever CLI](https://printingpress.dev/library/job-boards/lever)**, **[OpenSky CLI](https://printingpress.dev/library/travel/opensky)**, and **[Discord CLI](https://printingpress.dev/library/productivity/discord)** for the library, and **[fixed the dogfood check](https://github.com/mvanhorn/cli-printing-press/pull/4013)** so multi-line help examples parse as one command.
 <!-- CONTRIB:END -->
 
 <!-- PENDING:START -->
@@ -34,7 +34,7 @@ Python, TypeScript, React, PostgreSQL, Docker, multi-agent orchestration, LLM to
   - [#12139](https://github.com/stablyai/orca/pull/12139) - Fixes the Tasks view when it pulls items from several GitHub repos at once, so the list is complete, correctly ordered, and nothing gets skipped or duplicated.
 - **garrytan/gbrain** [![GitHub stars](https://img.shields.io/github/stars/garrytan/gbrain?style=flat&color=gold)](https://github.com/garrytan/gbrain)
   - [#3776](https://github.com/garrytan/gbrain/pull/3776) - Restores search-by-meaning for saved insights, so the think feature can find related notes even when the wording is different.
-  - [#4104](https://github.com/garrytan/gbrain/pull/4104) - v0.45.11.0 feat(sources): github source kind, issues and PRs live in the brain (#4086)
+  - [#4104](https://github.com/garrytan/gbrain/pull/4104) - Adds a live GitHub source that mirrors issues, pull requests, comments, reviews, labels, and checks into searchable GBrain pages, with webhook refresh and safe reconciliation.
 - **block/buzz** [![GitHub stars](https://img.shields.io/github/stars/block/buzz?style=flat&color=gold)](https://github.com/block/buzz)
   - [#4742](https://github.com/block/buzz/pull/4742) - Makes turning a workflow 'off' actually stick. Disabled workflows no longer run through any trigger, and they stay off even after a restart.
 <!-- PENDING:END -->

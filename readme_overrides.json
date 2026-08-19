@@ -34,7 +34,7 @@
       "name": "Printing Press",
       "url": "https://github.com/mvanhorn/cli-printing-press",
       "stars": "mvanhorn/cli-printing-press",
-      "blurb": "Created and contributed **[Paperclip CLI](https://printingpress.dev/library/project-management/paperclip-self-hosted)**, **[Zillow CLI](https://printingpress.dev/library/other/zillow)**, **[OpenSky CLI](https://printingpress.dev/library/travel/opensky)**, and **[Discord CLI](https://printingpress.dev/library/productivity/discord)** for the library, and **[fixed the dogfood check](https://github.com/mvanhorn/cli-printing-press/pull/4013)** so help examples that continue across lines parse as one command."
+      "blurb": "Created and contributed **[Paperclip CLI](https://printingpress.dev/library/project-management/paperclip-self-hosted)**, **[Zillow CLI](https://printingpress.dev/library/other/zillow)**, **[Greenhouse CLI](https://printingpress.dev/library/other/greenhouse)**, **[Lever CLI](https://printingpress.dev/library/job-boards/lever)**, **[OpenSky CLI](https://printingpress.dev/library/travel/opensky)**, and **[Discord CLI](https://printingpress.dev/library/productivity/discord)** for the library, and **[fixed the dogfood check](https://github.com/mvanhorn/cli-printing-press/pull/4013)** so multi-line help examples parse as one command."
     },
     {
       "name": "gbrain",
@@ -58,6 +58,9 @@
     },
     "garrytan/gbrain#3776": {
       "blurb": "Restores search-by-meaning for saved insights, so the think feature can find related notes even when the wording is different."
+    },
+    "garrytan/gbrain#4104": {
+      "blurb": "Adds a live GitHub source that mirrors issues, pull requests, comments, reviews, labels, and checks into searchable GBrain pages, with webhook refresh and safe reconciliation."
     },
     "garrytan/gbrain#3832": {
       "blurb": "Fixes the autopilot feature on Windows by finding its own launcher more reliably, with extra safety checks against common startup problems."
