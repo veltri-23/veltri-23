@@ -54,13 +54,45 @@ def building_block():
     entries.sort(key=lambda t: (not t[0], -t[1]))
     return "\n".join(l for _, _, l in entries) if entries else ""
 
+def user_prs(state):
+    """Fetch all user PRs for one state without GitHub search-index lag."""
+    query = f"""
+query($login:String!, $cursor:String) {{
+  user(login:$login) {{
+    pullRequests(first:100, states:[{state}], after:$cursor,
+                 orderBy:{{field:CREATED_AT,direction:DESC}}) {{
+      nodes {{
+        number
+        title
+        url
+        isDraft
+        repository {{ nameWithOwner isPrivate }}
+      }}
+      pageInfo {{ hasNextPage endCursor }}
+    }}
+  }}
+}}
+"""
+    out = []
+    cursor = None
+    while True:
+        args = ["api", "graphql", "-f", f"query={query}", "-f", f"login={USER}"]
+        if cursor:
+            args.extend(["-f", f"cursor={cursor}"])
+        page = json.loads(gh(*args))["data"]["user"]["pullRequests"]
+        out.extend(page["nodes"])
+        if not page["pageInfo"]["hasNextPage"]:
+            return out
+        cursor = page["pageInfo"]["endCursor"]
+
+
 def merged_pr_repos():
-    data = json.loads(gh("search", "prs", "--author", USER, "--merged",
-                         "--limit", "200", "--json", "repository,url,number,title"))
+    data = user_prs("MERGED")
     repos = {}
     for pr in data:
         full = pr["repository"]["nameWithOwner"]
-        if full.split("/")[0] == USER or full in OVR.get("contributing_exclude", []):
+        if (pr["repository"]["isPrivate"] or full.split("/")[0] == USER
+                or full in OVR.get("contributing_exclude", [])):
             continue
         repos.setdefault(full, []).append(pr)
     return repos
@@ -89,10 +121,10 @@ def contributing_block():
 
 def open_prs():
     """Non-draft PRs still awaiting review on repos I don't own."""
-    data = json.loads(gh("search", "prs", "--author", USER, "--state", "open",
-                         "--limit", "100", "--json", "repository,url,title,number,isDraft"))
+    data = user_prs("OPEN")
     return [p for p in data
             if not p["isDraft"]
+            and not p["repository"]["isPrivate"]
             and p["repository"]["nameWithOwner"].split("/")[0] != USER
             and p["repository"]["nameWithOwner"] not in OVR.get("pending_exclude", [])]
 
