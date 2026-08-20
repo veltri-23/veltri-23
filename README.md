@@ -32,8 +32,8 @@ Python, TypeScript, React, PostgreSQL, Docker, multi-agent orchestration, LLM to
   - [#948](https://github.com/mvanhorn/last30days-skill/pull/948) - Makes the Python and bash versions of the environment loader handle comments and quotes the same way, so the documented examples work as written.
 - **stablyai/orca** [![GitHub stars](https://img.shields.io/github/stars/stablyai/orca?style=flat&color=gold)](https://github.com/stablyai/orca)
   - [#12139](https://github.com/stablyai/orca/pull/12139) - Fixes the Tasks view when it pulls items from several GitHub repos at once, so the list is complete, correctly ordered, and nothing gets skipped or duplicated.
-- **garrytan/gbrain** [![GitHub stars](https://img.shields.io/github/stars/garrytan/gbrain?style=flat&color=gold)](https://github.com/garrytan/gbrain)
-  - [#3776](https://github.com/garrytan/gbrain/pull/3776) - Restores search-by-meaning for saved insights, so the think feature can find related notes even when the wording is different.
 - **block/buzz** [![GitHub stars](https://img.shields.io/github/stars/block/buzz?style=flat&color=gold)](https://github.com/block/buzz)
   - [#4742](https://github.com/block/buzz/pull/4742) - Makes turning a workflow 'off' actually stick. Disabled workflows no longer run through any trigger, and they stay off even after a restart.
+- **garrytan/gbrain** [![GitHub stars](https://img.shields.io/github/stars/garrytan/gbrain?style=flat&color=gold)](https://github.com/garrytan/gbrain)
+  - [#3776](https://github.com/garrytan/gbrain/pull/3776) - Restores search-by-meaning for saved insights, so the think feature can find related notes even when the wording is different.
 <!-- PENDING:END -->
