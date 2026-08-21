@@ -36,4 +36,5 @@ Python, TypeScript, React, PostgreSQL, Docker, multi-agent orchestration, LLM to
   - [#4742](https://github.com/block/buzz/pull/4742) - Makes turning a workflow 'off' actually stick. Disabled workflows no longer run through any trigger, and they stay off even after a restart.
 - **garrytan/gbrain** [![GitHub stars](https://img.shields.io/github/stars/garrytan/gbrain?style=flat&color=gold)](https://github.com/garrytan/gbrain)
   - [#3776](https://github.com/garrytan/gbrain/pull/3776) - Restores search-by-meaning for saved insights, so the think feature can find related notes even when the wording is different.
+  - [#4434](https://github.com/garrytan/gbrain/pull/4434) - feat(mcp): ChatGPT deep research fetch op + search id round-trip
 <!-- PENDING:END -->
