@@ -37,4 +37,6 @@ Python, TypeScript, React, PostgreSQL, Docker, multi-agent orchestration, LLM to
 - **garrytan/gbrain** [![GitHub stars](https://img.shields.io/github/stars/garrytan/gbrain?style=flat&color=gold)](https://github.com/garrytan/gbrain)
   - [#3776](https://github.com/garrytan/gbrain/pull/3776) - Restores search-by-meaning for saved insights, so the think feature can find related notes even when the wording is different.
   - [#4434](https://github.com/garrytan/gbrain/pull/4434) - feat(mcp): ChatGPT deep research fetch op + search id round-trip
+- **mvanhorn/printing-press-library** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/printing-press-library?style=flat&color=gold)](https://github.com/mvanhorn/printing-press-library)
+  - [#1783](https://github.com/mvanhorn/printing-press-library/pull/1783) - feat(fec-pp-cli): add fec-pp-cli
 <!-- PENDING:END -->
