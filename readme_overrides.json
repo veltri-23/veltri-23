@@ -91,6 +91,9 @@
     },
     "tmchow/hermes-kids-profile-blueprint#1": {
       "blurb": "Adds a Windows launcher template to the kids profile starter kit, so a standalone Hermes home for a child profile runs from one double-click script, with deployment notes and hygiene checks."
+    },
+    "garrytan/gbrain#4434": {
+      "blurb": "Lets ChatGPT deep research pull a specific GBrain page by id, and stamps search results with stable ids so a follow-up fetch works."
     }
   }
 }
