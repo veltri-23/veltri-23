@@ -40,7 +40,7 @@
       "name": "gbrain",
       "url": "https://github.com/garrytan/gbrain",
       "stars": "garrytan/gbrain",
-      "blurb": "**[Added a live GitHub source](https://github.com/garrytan/gbrain/pull/4104)** that mirrors issues and pull requests into searchable GBrain pages, with webhook refresh and reconciliation, and **[fixed the autopilot feature on Windows](https://github.com/garrytan/gbrain/pull/3832)** so it finds its own launcher reliably, with extra safety checks against common startup problems."
+      "blurb": "**[Added a live GitHub source](https://github.com/garrytan/gbrain/pull/4104)** that mirrors issues and pull requests into searchable GBrain pages, with webhook refresh and reconciliation, and **[fixed the autopilot feature on Windows](https://github.com/garrytan/gbrain/pull/3832)** so it finds its own launcher reliably, with extra safety checks against common startup problems. **[Taught ChatGPT deep research to pull a specific GBrain page](https://github.com/garrytan/gbrain/pull/4434)** by id, stamping search results with stable ids so a follow-up fetch lands on the exact page."
     }
   ],
   "pending_overrides": {
