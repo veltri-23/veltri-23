@@ -28,10 +28,10 @@ Python, TypeScript, React, PostgreSQL, Docker, multi-agent orchestration, LLM to
   - [#704](https://github.com/DietrichGebert/ponytail/pull/704) - Caps the PONYTAIL_SUBAGENT_MATCHER setting at 256 characters. An overlong or invalid value is ignored with a clear warning instead of breaking the hook.
 - **rtk-ai/rtk** [![GitHub stars](https://img.shields.io/github/stars/rtk-ai/rtk?style=flat&color=gold)](https://github.com/rtk-ai/rtk)
   - [#3538](https://github.com/rtk-ai/rtk/pull/3538) - Stops rtk from hiding the biggest disk consumers. du summary and depth-limited output now passes through unfiltered, so a disk survey reports every entry instead of only the first 40.
-- **mvanhorn/last30days-skill** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/last30days-skill?style=flat&color=gold)](https://github.com/mvanhorn/last30days-skill)
-  - [#948](https://github.com/mvanhorn/last30days-skill/pull/948) - Makes the Python and bash versions of the environment loader handle comments and quotes the same way, so the documented examples work as written.
 - **stablyai/orca** [![GitHub stars](https://img.shields.io/github/stars/stablyai/orca?style=flat&color=gold)](https://github.com/stablyai/orca)
   - [#12139](https://github.com/stablyai/orca/pull/12139) - Fixes the Tasks view when it pulls items from several GitHub repos at once, so the list is complete, correctly ordered, and nothing gets skipped or duplicated.
+- **mvanhorn/last30days-skill** [![GitHub stars](https://img.shields.io/github/stars/mvanhorn/last30days-skill?style=flat&color=gold)](https://github.com/mvanhorn/last30days-skill)
+  - [#948](https://github.com/mvanhorn/last30days-skill/pull/948) - Makes the Python and bash versions of the environment loader handle comments and quotes the same way, so the documented examples work as written.
 - **block/buzz** [![GitHub stars](https://img.shields.io/github/stars/block/buzz?style=flat&color=gold)](https://github.com/block/buzz)
   - [#4742](https://github.com/block/buzz/pull/4742) - Makes turning a workflow 'off' actually stick. Disabled workflows no longer run through any trigger, and they stay off even after a restart.
 <!-- PENDING:END -->
