@@ -26,10 +26,10 @@ Python, TypeScript, React, PostgreSQL, Docker, multi-agent orchestration, LLM to
   - [#82649](https://github.com/NousResearch/hermes-agent/pull/82649) - Adds end-to-end support for standalone memory providers, so Hermes can use external memory backends like GBrain.
 - **DietrichGebert/ponytail** [![GitHub stars](https://img.shields.io/github/stars/DietrichGebert/ponytail?style=flat&color=gold)](https://github.com/DietrichGebert/ponytail)
   - [#704](https://github.com/DietrichGebert/ponytail/pull/704) - Caps the PONYTAIL_SUBAGENT_MATCHER setting at 256 characters. An overlong or invalid value is ignored with a clear warning instead of breaking the hook.
-- **rtk-ai/rtk** [![GitHub stars](https://img.shields.io/github/stars/rtk-ai/rtk?style=flat&color=gold)](https://github.com/rtk-ai/rtk)
-  - [#3538](https://github.com/rtk-ai/rtk/pull/3538) - Stops rtk from hiding the biggest disk consumers. du summary and depth-limited output now passes through unfiltered, so a disk survey reports every entry instead of only the first 40.
 - **stablyai/orca** [![GitHub stars](https://img.shields.io/github/stars/stablyai/orca?style=flat&color=gold)](https://github.com/stablyai/orca)
   - [#12139](https://github.com/stablyai/orca/pull/12139) - Fixes the Tasks view when it pulls items from several GitHub repos at once, so the list is complete, correctly ordered, and nothing gets skipped or duplicated.
+- **rtk-ai/rtk** [![GitHub stars](https://img.shields.io/github/stars/rtk-ai/rtk?style=flat&color=gold)](https://github.com/rtk-ai/rtk)
+  - [#3538](https://github.com/rtk-ai/rtk/pull/3538) - Stops rtk from hiding the biggest disk consumers. du summary and depth-limited output now passes through unfiltered, so a disk survey reports every entry instead of only the first 40.
 - **block/buzz** [![GitHub stars](https://img.shields.io/github/stars/block/buzz?style=flat&color=gold)](https://github.com/block/buzz)
   - [#4742](https://github.com/block/buzz/pull/4742) - Makes turning a workflow 'off' actually stick. Disabled workflows no longer run through any trigger, and they stay off even after a restart.
 <!-- PENDING:END -->
