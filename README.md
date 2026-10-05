@@ -24,8 +24,6 @@ Python, TypeScript, React, PostgreSQL, Docker, multi-agent orchestration, LLM to
 - **NousResearch/hermes-agent** [![GitHub stars](https://img.shields.io/github/stars/NousResearch/hermes-agent?style=flat&color=gold)](https://github.com/NousResearch/hermes-agent)
   - [#76616](https://github.com/NousResearch/hermes-agent/pull/76616) - Adds a safe way to restart the Hermes Desktop app's current connection, with a confirmation prompt before anything happens. Cloud and remote connections keep their existing behavior.
   - [#82649](https://github.com/NousResearch/hermes-agent/pull/82649) - Adds end-to-end support for standalone memory providers, so Hermes can use external memory backends like GBrain.
-- **DietrichGebert/ponytail** [![GitHub stars](https://img.shields.io/github/stars/DietrichGebert/ponytail?style=flat&color=gold)](https://github.com/DietrichGebert/ponytail)
-  - [#704](https://github.com/DietrichGebert/ponytail/pull/704) - Caps the PONYTAIL_SUBAGENT_MATCHER setting at 256 characters. An overlong or invalid value is ignored with a clear warning instead of breaking the hook.
 - **stablyai/orca** [![GitHub stars](https://img.shields.io/github/stars/stablyai/orca?style=flat&color=gold)](https://github.com/stablyai/orca)
   - [#12139](https://github.com/stablyai/orca/pull/12139) - Fixes the Tasks view when it pulls items from several GitHub repos at once, so the list is complete, correctly ordered, and nothing gets skipped or duplicated.
 - **rtk-ai/rtk** [![GitHub stars](https://img.shields.io/github/stars/rtk-ai/rtk?style=flat&color=gold)](https://github.com/rtk-ai/rtk)
