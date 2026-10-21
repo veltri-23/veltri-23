@@ -30,6 +30,4 @@ Python, TypeScript, React, PostgreSQL, Docker, multi-agent orchestration, LLM to
   - [#3538](https://github.com/rtk-ai/rtk/pull/3538) - Stops rtk from hiding the biggest disk consumers. du summary and depth-limited output now passes through unfiltered, so a disk survey reports every entry instead of only the first 40.
 - **block/buzz** [![GitHub stars](https://img.shields.io/github/stars/block/buzz?style=flat&color=gold)](https://github.com/block/buzz)
   - [#4742](https://github.com/block/buzz/pull/4742) - Makes turning a workflow 'off' actually stick. Disabled workflows no longer run through any trigger, and they stay off even after a restart.
-- **garrytan/gbrain** [![GitHub stars](https://img.shields.io/github/stars/garrytan/gbrain?style=flat&color=gold)](https://github.com/garrytan/gbrain)
-  - [#7136](https://github.com/garrytan/gbrain/pull/7136) - v0.60.324.0 perf(search): title arm OR fallback drops repeated words and matches titles only (#7135)
 <!-- PENDING:END -->
