@@ -1,0 +1,32 @@
+[
+  {
+    "repository": "garrytan/gbrain",
+    "original": 7380,
+    "release": 7485,
+    "kind": "implementation"
+  },
+  {
+    "repository": "garrytan/gbrain",
+    "original": 4104,
+    "release": 4311,
+    "kind": "implementation"
+  },
+  {
+    "repository": "garrytan/gbrain",
+    "original": 3776,
+    "release": 4565,
+    "kind": "implementation"
+  },
+  {
+    "repository": "garrytan/gbrain",
+    "original": 3832,
+    "release": 4050,
+    "kind": "implementation"
+  },
+  {
+    "repository": "garrytan/gbrain",
+    "original": 7136,
+    "release": 7201,
+    "kind": "diagnosis"
+  }
+]
