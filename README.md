@@ -28,6 +28,8 @@ Python, TypeScript, React, PostgreSQL, Docker, multi-agent orchestration, LLM to
   - [#12139](https://github.com/stablyai/orca/pull/12139) - Fixes the Tasks view when it pulls items from several GitHub repos at once, so the list is complete, correctly ordered, and nothing gets skipped or duplicated.
 - **rtk-ai/rtk** [![GitHub stars](https://img.shields.io/github/stars/rtk-ai/rtk?style=flat&color=gold)](https://github.com/rtk-ai/rtk)
   - [#3538](https://github.com/rtk-ai/rtk/pull/3538) - Stops rtk from hiding the biggest disk consumers. du summary and depth-limited output now passes through unfiltered, so a disk survey reports every entry instead of only the first 40.
+- **omacom/omarchy** [![GitHub stars](https://img.shields.io/github/stars/omacom/omarchy?style=flat&color=gold)](https://github.com/omacom/omarchy)
+  - [#18429](https://github.com/omacom/omarchy/pull/18429) - Keep the last physical display enabled beside headless outputs (4.5)
 - **block/buzz** [![GitHub stars](https://img.shields.io/github/stars/block/buzz?style=flat&color=gold)](https://github.com/block/buzz)
   - [#4742](https://github.com/block/buzz/pull/4742) - Makes turning a workflow 'off' actually stick. Disabled workflows no longer run through any trigger, and they stay off even after a restart.
 <!-- PENDING:END -->
